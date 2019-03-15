@@ -1,1 +1,1 @@
-"# cosmos-db-migrations" 
+# Cosmos DB Migrations
