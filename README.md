@@ -21,22 +21,32 @@ If the `migrationscripts` container is not found it is created automatically.
 
 # Important Files  
 **config.js**
+
 This file contains connection parameters. 
 'endpoint' and 'accessKey' are by default read from environment variables: process.env.COSMOS_ENDPOINT and process.env.COSMOS_ACCESSKEY respectively. 
 
 **/scriptUtils/index.js**
+
 This module contains various utility functions to connect to database, get a reference to a container, check if a script is  already run etc.  
 
 **/scriptUtils/scriptRunner.js**
+
 This module contains a utility function to ensure a script is run only once per database.  
 
 # Script Naming Convention 
+
 File names should follow the format: <yyyymmdd-hhmm>-<work item id>-<descriptive text>.js
+
 A sample name is as follows:  
+
 20180101-1200-0002-improved-this-and-that
+
  \____  ____/ \  / \_________  _________/
+
       \/       \/            \/
+
     Ordinal TicketId    Descriptive Text
+
 
 Ordinal is basically a datetime string. And it is there to ensure sorted execution at all times. 
 TicketId is the id of work item related to the script. 
