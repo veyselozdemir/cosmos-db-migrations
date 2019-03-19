@@ -1,0 +1,12 @@
+{
+  "name": "cosmos-db-migrations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@azure/cosmos": "^2.1.2",
+    "prompt-confirm": "^2.0.4",
+    "uuid": "^3.3.2"
+  }
+}
